@@ -1,0 +1,321 @@
+//MEDIA QUERY DECLARATION: 
+$NestHub: 1024px;
+$SurfacePro: 912px;
+$IpadAir: 820px;
+$SurfaceDuo: 540px;
+$IphoneXR: 414px;
+$GalaxyS20: 412px;
+$IphoneSE: 375px;
+
+@mixin NestHub {
+  @media (max-width: #{$NestHub}) {
+    @content;
+  }  
+}
+@mixin SurfacePro {
+  @media (max-width: #{$SurfacePro}) {
+    @content;
+  }  
+}
+
+@mixin IpadAir {
+    @media (max-width: #{$IpadAir}) {
+        @content;
+    }
+}
+@mixin SurfaceDuo {
+    @media (max-width: #{$SurfaceDuo}) {
+        @content;
+    }
+}
+@mixin IphoneXR {
+    @media (max-width: #{$IphoneXR}) {
+        @content;
+    }
+}
+@mixin GalaxyS20 {
+    @media (max-width: #{$GalaxyS20}) {
+        @content;
+    }
+}
+@mixin IphoneSE {
+    @media (max-width: #{$IphoneSE}) {
+        @content;
+    }
+}
+
+// CSS STYLE ELEMENTS:
+$font-family: "Josefin Sans", sans-serif;
+$font-size: 1.2rem;
+$padding: 2em;
+$border-radius: 5%;
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    box-sizing: border-box;
+
+    main{
+        background-image: url("../images/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: $padding;
+
+        .container{
+            box-shadow: 0.1em 0.1em 0.1em black;
+            background-color: #4b2354;
+            border-radius: $border-radius;
+            padding: $padding;
+            width: 30%;
+            margin: 10% auto;
+            align-items: center;
+            justify-content: center;
+
+            @include SurfacePro(){
+                width: 60%;
+            }
+
+            @include IpadAir(){
+                width: 80%;
+            }
+
+            form{
+
+                .legend{
+                    text-align: center;
+                    color: whitesmoke;
+                    margin-bottom: 1.5em;
+
+                    @include GalaxyS20(){
+                        font-size: 1.5rem;
+                        line-height: 30px;
+                    }
+                    
+                }
+
+                .input100{
+                    font-size: $font-size;
+                    color: whitesmoke;
+                    line-height: 1.2;
+                    width: 88%;
+                    margin-bottom: 1.2em;
+                    height: 2rem;
+                    background: transparent;
+                    padding: 0 20px 0 23px;
+                    outline: none;
+
+                    @include GalaxyS20(){
+                        font-size: 1rem;
+                        padding: 0 20px;
+                    }
+                }
+
+                
+
+                .got_password{
+                    font-size: 0.9rem;
+                    margin-top: -3%;
+                    color: whitesmoke;
+
+                    & a{
+                        color: lightgray;
+                    }
+                }
+
+                .button-div{
+                    width: 35%;
+                    margin: 8% auto;
+
+                    @include NestHub(){
+                        width: 43%;
+                    }
+                    @include SurfacePro(){
+                        width: 30%;
+                    }
+
+                    @include IpadAir(){
+                        width: 25%;
+                    }
+                    @include SurfaceDuo(){
+                        width: 35%;
+                    }
+                    @include IphoneXR(){
+                        width: 47%;
+                    }
+                    @include GalaxyS20(){
+                        width: 48%;
+                    }
+                    
+                    
+                    .button{
+                        background-color: whitesmoke;
+                        color:#4b2354;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        border: 2px solid whitesmoke;
+                        border-radius:$border-radius;
+                        padding: 7px 30px;
+                        cursor: pointer;
+
+                        &:active{
+                            border: 2px solid whitesmoke;
+                            background-color: #4b2354;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+
+                .login-class{
+                    width: 27%;
+                    margin: 10% auto;
+                    color: lightgray;
+                }
+
+                .flex-icons{
+                    width: 22%;
+                    margin: -2.8% auto;
+
+                    @include NestHub(){
+                        width: 30%;
+                    }
+                    @include SurfacePro(){
+                        width: 18%;
+                    }
+                    @include IpadAir(){
+                        width: 15%;
+                    }
+                    @include SurfaceDuo(){
+                        width: 20%;
+                    }
+                    @include IphoneXR(){
+                        width: 30%;
+                    }
+                    @include GalaxyS20(){
+                        width: 30%;
+                    }
+
+                    & a{
+                        text-decoration: none;
+                    }
+                }
+
+                .text-center{
+                    margin:15% auto;
+                    width: 50%;
+                    padding-left: 2%;
+                    color: lightgray;
+
+                    @include NestHub(){
+                        width: 65%;
+                    }
+                    @include SurfacePro(){
+                        width: 43%;
+                    }
+                    @include IpadAir(){
+                        width: 35%;
+                    }
+                    @include SurfaceDuo(){
+                        width: 48%;
+                    }
+                    @include IphoneXR(){
+                        width: 65%;
+                    }
+                    @include GalaxyS20(){
+                        width: 65%;
+                    }
+
+                    & a{
+                        color: whitesmoke;
+                    }
+                }
+                
+            }
+
+            .radio-div{
+                font-size: 1.2rem;
+                color: whitesmoke;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: -3%;
+
+                @include IphoneXR(){
+                    font-size: 1rem;
+                }
+
+                @include GalaxyS20(){
+                    font-size: 1rem;
+                }
+
+                #gender{
+                    @include SurfacePro(){
+                        margin-left: -2%;
+                    }
+                    @include IpadAir(){
+                        margin-left: -4%;
+                    }
+                    @include SurfaceDuo(){
+                        justify-content: space-between;
+                        margin-left: 0.2%;
+                    }
+
+                    @include GalaxyS20(){
+                        margin-left: 1%;
+                    }
+    
+                }
+
+                
+
+            }
+
+            .radio-div-p{
+                font-size: 1.2rem;
+                color: whitesmoke;
+                margin-left: 3%;
+
+                @include GalaxyS20(){
+                    font-size: 1rem;
+                }
+            }
+           
+
+            
+        }
+
+        #upload-file{
+         @include IphoneXR(){
+            margin-top: 7%;    
+         }  
+         @include GalaxyS20(){
+            margin-top: 7%;    
+         }  
+        }
+        #file_upload{
+            padding-bottom: 5%;
+        }
+
+
+        #upload{
+            width: 10%;
+            margin-top: 6.5%;
+            cursor: pointer;
+
+            @include IpadAir(){
+                width: 8%;
+            }
+        }
+
+        textarea{
+           @include NestHub(){
+            width: 93%;
+           }
+           @include IphoneSE(){
+            font-size: 1rem !important;
+          }
+        }
+
+    }
+}
+

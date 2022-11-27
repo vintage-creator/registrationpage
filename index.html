@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Register for ITSkills Bootcamp, Lagos to gain relevant tech skillsets to land high-paying jobs around the world."
+    />
+    <meta
+      name="keywords"
+      content="Registration page, tech, Registration template"
+    />
+    <meta name="author" content="Israel Abazie" />
+    <link rel="icon" href="./images/favicon.png">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>Registration page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="#" method="post">
+          <h1 class="legend">Register for ITSkills Bootcamp</h1>
+          <div data-validate="Fullname">
+            <label for="fname"><input id="fname"
+              class="input100"
+              type="text"
+              name="username"
+              placeholder="Enter your fullname:" required
+            /></label>
+          </div>
+
+          <div data-validate="email">
+            <label for="pswrd"><input id="email"
+              class="input100"
+              type="email"
+              name="email"
+              placeholder="Enter email address:" required
+            /></label>
+          </div>
+
+          <div data-validate="Password">
+            <label for="pswrd"><input id="pswrd"
+              class="input100"
+              type="password"
+              name="password"
+              placeholder="Enter password:" required
+            /></label>
+          </div>
+          
+          <div data-validate="Age">
+            <label for="age"><input id="age"
+              class="input100"
+              type="number"
+              name="age"
+              placeholder="Select age:" required
+            /></label>
+          </div>
+
+          <div class="radio-div" data-validate="Male/female">
+            <p id="gender">Choose gender:</p><br/>
+            <div>
+              <input id="male"
+              class="input200"
+              type="radio"
+              name="male" value="Male" required
+            /> 
+            <label for="male">Male</label>
+            </div>
+
+           <div>
+            <input id="female"
+            class="input200"
+            type="radio"
+            name="female" value="Female" required
+          /> <label for="female">Female</label>
+           </div>
+          </div>
+
+          <div data-validate="selectall">
+            <p class="radio-div-p">Select all that applies:</p><br/>
+            <div class="radio-div">
+              <div>
+                <input id="married"
+              class="input200"
+              type="checkbox"
+              name="married" required
+            /><label for="married">Married</label>
+              </div><br/>
+
+            <div>
+              <input id="single"
+              class="input200"
+              type="checkbox"
+              name="single" required
+            /><label for="single">Single</label>
+            </div><br/>
+
+            <div>
+              <input id="Separated"
+              class="input200"
+              type="checkbox"
+              name="Separated" required
+            /><label for="single">Separated</label>
+            </div>
+            </div>
+          </div>
+
+          <div id="upload-file">
+            <label for="upload" class="radio-div-p" id="file_upload">Please upload your ID
+              <input type="file" id="upload" style="display: none;" required><img src="./images/Vector (8).png" alt="upload file" id="upload"><span style="color:red; font-size: 35px;">*</span>
+            </label>
+          </div>
+
+          <div style="margin-top:7%;">
+            <label for="upload" class="radio-div-p" id="file_upload">
+              <textarea rows="5" cols="31" style="font-size: 1.2rem; outline: none;" placeholder="Tell us why you want to join the bootcamp. (Limit 2 sentences)"></textarea>
+            </label>
+          </div>
+
+          <div class="button-div">
+            <button class="button">Register</button>
+          </div>
+          
+          <div class="flex-icons">
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="FACEBOOK" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-google.png" style="width: 23%" alt="GOOGLE" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="TWITTER" />
+            </a>
+          </div>
+          <div class="text-center">
+            Already registered?<a href="#"> Log in </a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
