@@ -124,6 +124,12 @@ body main .container form .button-div, html main .container form .button-div {
   }
 }
 
+@media (max-width: 375px) {
+  body main .container form .button-div, html main .container form .button-div {
+    width: 55%;
+  }
+}
+
 body main .container form .button-div .button, html main .container form .button-div .button {
   background-color: whitesmoke;
   color: #4b2354;
@@ -188,6 +194,12 @@ body main .container form .flex-icons, html main .container form .flex-icons {
   }
 }
 
+@media (max-width: 375px) {
+  body main .container form .flex-icons, html main .container form .flex-icons {
+    width: 35%;
+  }
+}
+
 body main .container form .flex-icons a, html main .container form .flex-icons a {
   text-decoration: none;
 }
@@ -232,6 +244,12 @@ body main .container form .text-center, html main .container form .text-center {
 @media (max-width: 412px) {
   body main .container form .text-center, html main .container form .text-center {
     width: 65%;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .container form .text-center, html main .container form .text-center {
+    width: 73%;
   }
 }
 

@@ -146,6 +146,9 @@ body, html{
                     @include GalaxyS20(){
                         width: 48%;
                     }
+                    @include IphoneSE(){
+                        width: 55%;
+                    }
                     
                     
                     .button{
@@ -194,6 +197,9 @@ body, html{
                     @include GalaxyS20(){
                         width: 30%;
                     }
+                    @include IphoneSE(){
+                        width: 35%;
+                    }
 
                     & a{
                         text-decoration: none;
@@ -223,6 +229,9 @@ body, html{
                     }
                     @include GalaxyS20(){
                         width: 65%;
+                    }
+                    @include IphoneSE(){
+                        width: 73%;
                     }
 
                     & a{
